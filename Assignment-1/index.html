@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+ 
+    <div class="main-container">
+
+
+           <!-- a. Table
+
+            i. Create an HTML table with 5 columns and 5 rows, with a header row and the
+                    first column as SL.No.
+            ii. The header rows should be SL.No., First Name, Last Name, City,Country
+            iii. Fill the table with realistic data 
+        
+            -->
+
+        <div class="left-container">
+            <h2>PEOPLE'S DATABASE</h2>
+            <table class="css-serial">
+                <thead>
+                    <tr>
+                        <th>SL.No</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td></td>
+                        <td>Aswin</td>
+                        <td>Kumar</td>
+                        <td>Namakkal</td>
+                        <td>India</td>
+                    </tr>
+        
+                    <tr>
+                        <td></td>
+                        <td>Mohan</td>
+                        <td>Raj</td>
+                        <td>Salem</td>
+                        <td>India</td>
+                    </tr>
+        
+                    <tr>
+                        <td></td>
+                        <td>Durai</td>
+                        <td>Raj</td>
+                        <td>Aattur</td>
+                        <td>India</td>
+                    </tr>
+        
+                    <tr>
+                        <td></td>
+                        <td>Gokul</td>
+                        <td>Selvaraj</td>
+                        <td>Krishnagiri</td>
+                        <td>India</td>
+                    </tr>
+        
+                    <tr>
+                        <td></td>
+                        <td>Sanjeev</td>
+                        <td>kumar</td>
+                        <td>Bangalore</td>
+                        <td>India</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        
+        
+            <!-- end of first part of assignment  -->
+        
+            <!-- b. Buttons
+                i. Create 2 buttons: 
+                    1st button called “Add row to bottom” will add a new row with data to the table.
+                ii. 2nd button called “Add row to top” will add a new row to the top of the table 
+                    below the header row.
+                iii. The SL.No. should be automatically adjusted. 
+            -->
+        
+        
+            <div class="add-a-new-row">
+                <button class="main-button" onclick="showForm()">Add a new row</button>
+            </div>
+        </div>
+
+        
+    
+    
+        <div class="right-container">
+            <form class="user-details" id="myForm" action="" method="">
+    
+                <h3>ENTER YOUR DETAILS</h3>
+
+                <div class="form-body">
+    
+                    <div class="firstnameDiv">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                    </div>
+        
+                    <div class="lastnameDiv">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="enter your last name">
+                    </div>
+        
+                    <div class="cityDiv">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="city Name">
+                    </div>
+        
+                    <div class="countryDiv">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country" placeholder="country">
+                    </div>
+
+                </div>
+                
+            </form>
+            
+            <div class="form-buttons">
+                <button class="addButton" type="submit" onclick="addToBottom()">Add row to bottom</button>
+                    
+                <button class="addButton" id="topButton" type="submit" onclick="addToTop()">Add row to top</button>
+            </div>
+            
+
+        </div>
+    
+
+
+    </div>
+   
+
+   
+
+    <!-- adding script -->
+    <script src="index.js"></script>
+
+</body>
+</html>
